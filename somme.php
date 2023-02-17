@@ -2,11 +2,13 @@
 <body>
 
 <?php 
-$x=$_POST["nombre1"];
-$y=$_POST["nombre2"];
-$z=$x+$y ;
-echo "la somme de ".$x." et ".$y." = ".$z; 
-?>
+$n=$_POST["nombre"];
+$s=0;
 
+for($i=0;$i<=$n;$i++)
+    $s+=$i;
+
+echo "Sigma = ".$s; 
+?>
 </body>
 </html>
